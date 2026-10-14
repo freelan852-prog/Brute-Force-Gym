@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-condensed: 'Barlow Condensed', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-manrope);
+    background-color: #0B0B0D;
+    color: #E5E1E4;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-condensed {
+    font-family: var(--font-condensed);
+    text-transform: uppercase;
+  }
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-mono-data {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom crisp dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262B;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A24;
+}
+
+/* Ambient radial glow helper */
+.radial-bloom-orange {
+  background: radial-gradient(circle at 50% 30%, rgba(255, 90, 36, 0.15) 0%, rgba(11, 11, 13, 0) 70%);
+}
